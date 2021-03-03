@@ -10,17 +10,22 @@
 		  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
           <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> 
           <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+          <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+       
 </head>
 <body>
-    <a-scene    physics="gravity:"  >
+    <a-scene    physics="gravity:"   >
 <a-assets>
 <!-- AQUI SE DECLARAN LOS ASSETS A IMPORTAR -->
+<img src="texturas/NIGHTSKY.jpeg" id="nightTexture">
 
 
  </a-assets>
+<a-sky   src="#nightTexture" ></a-sky>
 
-
-
+<a-box id="pared1" geometry="height: 80"  position="0 40.28003 -82.00957" width="30"  height="15"    color="#993d3d"  ></a-box>
+<a-box id="pared2" geometry="height: 80"  position="0.15779 40.24754 15.32785" width="30"  height="15"    color="#993d3d"  ></a-box>
+<a-box id="pared3" geometry="height: 80; width: 100" scale="0.973 1 1" rotation="0 90 0"  position="14.474 40.22712 -33.81044" width="30"  height="15"    color="#993d3d"  ></a-box>
 
 
 
