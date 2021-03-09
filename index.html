@@ -22,13 +22,17 @@
 <img src="texturas/ventanaCristal.jpg" id="cristal">
  </a-assets>
 <a-sky   src="#nightTexture" ></a-sky>
-
+<a-sound src="AUDIOS/jazz.mp3" autoplay="true" position="0 2 5"  loop="true" ></a-sound>
+<!-- PAREDES -->
 <a-box id="pared1" material="color: #C8BFC7" geometry="height: 80"  position="0 40.28003 -82.00957" width="30"    color="#993d3d"  ></a-box>
 <a-box id="pared2" material="color: #C8BFC7" geometry="height: 80; width: 170"  position="-70.07858 40.24754 15.32785" width="30"    color="#993d3d"  ></a-box>
 <a-box id="pared3" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.973 1 1" rotation="0 90 0"  position="14.474 40.22712 -33.81044" width="30"     color="#993d3d"  ></a-box> 
 <a-box id="pared4" src="#cristal" material="color: #C8BFC7" geometry="height: 30"  position="-29.95544 15.27895 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-sound src="AUDIOS/jazz.mp3" autoplay="true" position="0 2 5"></a-sound>
-<a-plane src="#marmol" id="piso" position="-70.19052 0.72804 -33.20423" rotation="-89.56304366146489 0 0"  scale="170.18471 98.45682 1.0236"   color="gray"></a-plane>
+<a-box  id="complementopared4" scale="1.03 0.67722 1"  material="color: #C8BFC7" geometry="height: 74"  position="-30.2655 55.24381 -82.00957" width="30"    color="#993d3d"  ></a-box>
+<a-box id="pared5" scale="-0.97533 1 1" material="color: #C8BFC7" geometry="height: 80"  position="-59.57935 40.28003 -82.00957" width="30"    color="#993d3d"  ></a-box>
+<a-box id="pared6" src="#cristal" material="color: #C8BFC7" geometry="height: 30"  position="-29.95544 15.27895 -82.00957" width="30"    color="#993d3d"  ></a-box>
+<!-- PISO -->
+<a-plane src="#marmol" id="piso" position="-70.19052 0.72804 -33.20423" rotation="-89.56304366146489 0 0"  scale="170.185 98.45682 1.0236"   color="gray"></a-plane>
 
 
 <a-camera position=" 0 20 5"></a-camera>
