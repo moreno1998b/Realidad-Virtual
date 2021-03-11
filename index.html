@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,41 +14,45 @@
        
 </head>
 <body>
-    <a-scene    >
-<a-assets>
-    <!-- PUERTA -->
-    <a-asset-item  id="puerta"  src="TEXTURAS/puerta/doorObj.obj"  ></a-asset-item>
-    <a-asset-item  id="mtlPuerta"  src="TEXTURAS/puerta/door.mtl"  ></a-asset-item>
+    <a-scene>
+        <a-assets>
+            <!-- PUERTA -->
+            <a-asset-item id="puerta" src="TEXTURAS/puerta/doorObj.obj"></a-asset-item>
+            <a-asset-item id="mtlPuerta" src="TEXTURAS/puerta/door.mtl"></a-asset-item>
+            <a-asset-item id="Apto" src="TEXTURAS/apto/ap.obj"></a-asset-item>
+            <a-asset-item id="mtlApto" src="TEXTURAS/apto/ap.mtl"></a-asset-item>
+
+            <!-- AQUI SE DECLARAN LOS ASSETS A IMPORTAR -->
+            <img src="texturas/NIGHTSKY.jpeg" id="nightTexture">
+            <img src="texturas/marmol3.png" id="marmol">
+            <img src="texturas/ventanaCristal.jpg" id="cristal">
+        </a-assets>
+        <a-sky src="#nightTexture"></a-sky>
+        <a-sound src="AUDIOS/jazz.mp3" autoplay="true" position="0 2 5" loop="true"></a-sound>
+        <!-- PAREDES -->
+        <a-box id="pared1" material="color: #C8BFC7" geometry="height: 80" position="0 40.28003 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="pared2" material="color: #C8BFC7" geometry="height: 80; width: 170" position="-70.07858 40.24754 15.32785" width="30" color="#993d3d"></a-box>
+        <a-box id="pared3" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.973 1 1" rotation="0 90 0" position="14.474 40.22712 -33.81044" width="30" color="#993d3d"></a-box>
+        <a-box id="pared4" src="#cristal" material="color: #C8BFC7" geometry="height: 30" position="-29.95544 15.27895 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="complementopared4" scale="1.03 0.67722 1" material="color: #C8BFC7" geometry="height: 74" position="-30.2655 55.24381 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="pared5" scale="-0.97533 1 1" material="color: #C8BFC7" geometry="height: 80" position="-59.57935 40.28003 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="pared6" src="#cristal" material="color: #C8BFC7" geometry="height: 30" position="-89.22923 15.27895 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="complementopared6" scale="1.03 0.67722 1" material="color: #C8BFC7" geometry="height: 74" position="-88.78986 55.24381 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="pared7" scale="1.70416 1 1" material="color: #C8BFC7" geometry="height: 80" position="-129.7142 40.28003 -82.00957" width="30" color="#993d3d"></a-box>
+        <a-box id="pared8" scale="5.5936 0.63 1" material="color: #C8BFC7" geometry="height: 80" position="-71.50158 55.03137 -81.99027" width="30" color="#993d3d"></a-box>
+        <a-box id="pared9" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.973 1 1" rotation="0 90 0" position="14.474 40.22712 -33.81044" width="30" color="#993d3d"></a-box>
+        <a-box id="pared10" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.313 0.64 2.00156" rotation="0 90 0" position="-154.75005 25.13421 -66.82231" width="30" color="#993d3d"></a-box>
+        <a-box id="pared11" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.343 0.64 2.19568" rotation="0 90 0" position="-155.13804 24.9439 -1.57147" width="30" color="#993d3d"></a-box>
+        <a-box id="pared12" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.983 0.37681 2.43716" rotation="0 90 0" position="-155.00564 65.25422 -33.36219" width="30" color="#993d3d"></a-box>
+        <!-- PISO -->
+        <a-plane src="#marmol" id="piso" position="-70.19052 0.72579 -32.90957" rotation="-89.56304366146489 0 0" scale="170.185 98.45682 1.0236" color="gray"></a-plane>
+        <!-- PUERTA -->
+        <a-entity id="#puertaPrincipal" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #puerta; mtl: #mtlPuerta" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
+        <a-entity id="#Apto" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #Apto; mtl: #mtlApto" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
 
 
-<!-- AQUI SE DECLARAN LOS ASSETS A IMPORTAR -->
-<img src="texturas/NIGHTSKY.jpeg" id="nightTexture">
-<img src="texturas/marmol3.png" id="marmol" >
-<img src="texturas/ventanaCristal.jpg" id="cristal">
- </a-assets>
-<a-sky   src="#nightTexture" ></a-sky>
-<a-sound src="AUDIOS/jazz.mp3" autoplay="true" position="0 2 5"  loop="true" ></a-sound>
-<!-- PAREDES -->
-<a-box id="pared1" material="color: #C8BFC7" geometry="height: 80"  position="0 40.28003 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared2" material="color: #C8BFC7" geometry="height: 80; width: 170"  position="-70.07858 40.24754 15.32785" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared3" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.973 1 1" rotation="0 90 0"  position="14.474 40.22712 -33.81044" width="30"     color="#993d3d"  ></a-box> 
-<a-box id="pared4" src="#cristal" material="color: #C8BFC7" geometry="height: 30"  position="-29.95544 15.27895 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box  id="complementopared4" scale="1.03 0.67722 1"  material="color: #C8BFC7" geometry="height: 74"  position="-30.2655 55.24381 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared5" scale="-0.97533 1 1" material="color: #C8BFC7" geometry="height: 80"  position="-59.57935 40.28003 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared6" src="#cristal" material="color: #C8BFC7" geometry="height: 30"  position="-89.22923 15.27895 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box  id="complementopared6" scale="1.03 0.67722 1"  material="color: #C8BFC7" geometry="height: 74"  position="-88.78986 55.24381 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared7" scale="1.70416 1 1" material="color: #C8BFC7" geometry="height: 80"  position="-129.7142 40.28003 -82.00957" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared8" scale="5.5936 0.63 1" material="color: #C8BFC7" geometry="height: 80"  position="-71.50158 55.03137 -81.99027" width="30"    color="#993d3d"  ></a-box>
-<a-box id="pared9" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.973 1 1" rotation="0 90 0"  position="14.474 40.22712 -33.81044" width="30"     color="#993d3d"  ></a-box> 
-<a-box id="pared10" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.313 0.64 2.00156" rotation="0 90 0"  position="-154.75005 25.13421 -66.82231" width="30"     color="#993d3d"  ></a-box> 
-<a-box id="pared11" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.343 0.64 2.19568" rotation="0 90 0"  position="-155.13804 24.9439 -1.57147" width="30"     color="#993d3d"  ></a-box> 
-<a-box id="pared12" material="color: #C8BFC7" geometry="height: 80; width: 100" scale="0.983 0.37681 2.43716" rotation="0 90 0"  position="-155.00564 65.25422 -33.36219" width="30"     color="#993d3d"  ></a-box> 
-<!-- PISO -->
-<a-plane src="#marmol" id="piso" position="-70.19052 0.72579 -32.90957" rotation="-89.56304366146489 0 0"  scale="170.185 98.45682 1.0236"   color="gray"></a-plane>
-<!-- PUERTA -->
-<a-entity id="#puertaPrincipal" scale="0.212 0.113 0.24767" rotation="270 270 0"  obj-model="obj: #puerta; mtl: #mtlPuerta"   static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823" ></a-entity>
 
-<a-camera position=" 0 20 5"></a-camera>
+        <a-camera position=" 0 20 5"></a-camera>
     </a-scene>
 </body>
 </html>
