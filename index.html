@@ -16,23 +16,17 @@
 <body>
     <a-scene>
         <a-assets>
+            <a-asset-item id="mueble" src="TEXTURAS/10256_TV_Cabinet_v1_max2011.obj"></a-asset-item>
+            <a-asset-item id="mtlmueble" src="TEXTURAS/10256_TV_Cabinet_v1_max2011.mtl"></a-asset-item>
             <!-- PUERTA -->
             <a-asset-item id="puerta" src="TEXTURAS/puerta/doorObj.obj"></a-asset-item>
             <a-asset-item id="mtlPuerta" src="TEXTURAS/puerta/door.mtl"></a-asset-item>
-            <a-asset-item id="Apto" src="TEXTURAS/apartamento/apto.obj"></a-asset-item>
-            <a-asset-item id="mtlApto" src="TEXTURAS/apartamento/apto.mtl"></a-asset-item>
-            <a-asset-item id="bed" src="TEXTURAS/bed/bed.obj"></a-asset-item>
-            <a-asset-item id="mtlBed" src="TEXTURAS/bed/bed.mtl"></a-asset-item>
-            <a-asset-item id="desk" src="TEXTURAS/desk/desk.obj"></a-asset-item>
-            <a-asset-item id="mtlDesk" src="TEXTURAS/desk/desk.mtl"></a-asset-item>
-            <a-asset-item id="mesa" src="TEXTURAS/mesa/Table.obj"></a-asset-item>
-            <a-asset-item id="mtlMesa" src="TEXTURAS/mesa/Table.mtl"></a-asset-item>
-            <a-asset-item id="mueble" src="TEXTURAS/mueble/sofa.obj"></a-asset-item>
-            <a-asset-item id="mtlMueble" src="TEXTURAS/mueble/sofa.mtl"></a-asset-item>
-            <a-asset-item id="planta" src="TEXTURAS/planta/plant.obj"></a-asset-item>
-            <a-asset-item id="mtlPlanta" src="TEXTURAS/planta/plant.mtl"></a-asset-item>
-            <a-asset-item id="refri" src="TEXTURAS/Refri/Refri.obj"></a-asset-item>
-            <a-asset-item id="mtlRefri" src="TEXTURAS/Refri/Refri.mtl"></a-asset-item>
+            <!-- Sofa -->
+            <a-asset-item id="sofa" src="TEXTURAS/sofa/File/Sofa.obj"></a-asset-item>
+            <a-asset-item id="mtlsofa" src="TEXTURAS/sofa/File/Sofa.mtl"></a-asset-item>
+            <!-- desk -->
+            <a-asset-item id="desk" src="TEXTURAS/MesaEscritorio.obj"></a-asset-item>
+            <a-asset-item id="mtldesk" src="TEXTURAS/MesaEscritorio.mtl"></a-asset-item>
 
 
             <!-- AQUI SE DECLARAN LOS ASSETS A IMPORTAR -->
@@ -40,6 +34,15 @@
             <img src="texturas/marmol3.png" id="marmol">
             <img src="texturas/ventanaCristal.jpg" id="cristal">
         </a-assets>
+
+        <a-entity id="#sofa" scale="0.212 0.113 0.24767" rotation="0 0 0" obj-model="obj: #sofa; mtl: #mtlsofa" static-body="shape:mesh; sphereRadius: NaN" position="0 2 0"></a-entity>
+
+
+        <a-entity id="#mueble" scale="0.212 0.113 0.24767" rotation="0 0 0" obj-model="obj: #mueble; mtl: #mtlmueble" static-body="shape:mesh; sphereRadius: NaN" position="-40 0 0"></a-entity>
+
+
+        <a-entity id="#desk" color="red" scale="1 1 1" rotation="0 0 0" obj-model="obj: #desk; mtl: #mtldesk" static-body="shape:mesh; sphereRadius: NaN" position="0 0 0"></a-entity>
+
         <a-sky src="#nightTexture"></a-sky>
         <a-sound src="AUDIOS/jazz.mp3" autoplay="true" position="0 2 5" loop="true"></a-sound>
         <!-- PAREDES -->
@@ -61,16 +64,16 @@
         <a-plane src="#marmol" id="piso" position="-70.19052 0.72579 -32.90957" rotation="-89.56304366146489 0 0" scale="170.185 98.45682 1.0236" color="gray"></a-plane>
         <!-- PUERTA -->
         <a-entity id="#puertaPrincipal" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #puerta; mtl: #mtlPuerta" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
-        <a-entity id="#Apto" scale="0.212 0.113 0.24767" rotation="0 0 0" obj-model="obj: #Apto; mtl: #mtlApto" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
-        <!-- <a-entity light="type: ambient; color: #CCC"></a-entity> -->
+
         <!-- <a-entity id="#bed" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #bed; mtl: #mtlBed" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
-        <a-entity id="#desk" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #desk; mtl: #mtlDesk" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
-        <a-entity id="#mesa" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #mesa; mtl: #mtlMesa" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
-        <a-entity id="#mueble" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #mueble; mtl: #mtlMueble" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
-        <a-entity id="#refri" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #refri; mtl: #mtlRefri" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity> --> -->
+    <a-entity id="#desk" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #desk; mtl: #mtlDesk" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
+    <a-entity id="#mesa" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #mesa; mtl: #mtlMesa" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
+    <a-entity id="#mueble" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #mueble; mtl: #mtlMueble" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity>
+    <a-entity id="#refri" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #refri; mtl: #mtlRefri" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity> -->
+        -->
         <!-- <a-entity id="#mtlRefri" scale="0.212 0.113 0.24767" rotation="270 270 0" obj-model="obj: #refri; mtl: #metlrefri" static-body="shape:mesh; sphereRadius: NaN" position="-154.76137 24.85253 -34.823"></a-entity> -->
 
-  
+
 
         <a-camera position=" 0 20 5"></a-camera>
     </a-scene>
