@@ -1,28 +1,29 @@
 El siguiente proyecto fue realizado por los ingenieros
 Jorge Moreno,
 Juan Felipe Jimenez,
-Oscar LÛpez y Andrea PÈrez,
+Oscar L√≥pez y Andrea P√©rez,
 
 
 proyecto el cual fue solicitado por la empresa turanchito.co, dicha empresa se especializa
 en la venta de casas campestres y apartamentos tipo loft para personas en estrato alto.
-Esta compaÒÌa abriÛ una licitaciÛn para el proyecto en menciÛn de tipo realidad virtual
+Esta compa√±√≠a abri√≥ una licitaci√≥n para el proyecto en menci√≥n de tipo realidad virtual
 el cual pudiese hacer un recorrido de las casas y apartamentos que esta vende, esto con
-el fin de ofrecer un producto de alta calidad y un sistema con una experiencia lo m·s real posible.
-Este proyecto realizado por los ingenieros antes en menciÛn, consta de una vista de un
-apartamento tipo loft en un modelo 3D con la posibilidad de movimiento en 360∞ del usuario
+el fin de ofrecer un producto de alta calidad y un sistema con una experiencia lo m√°s real posible.
+Este proyecto realizado por los ingenieros antes en menci√≥n, consta de una vista de un
+apartamento tipo loft en un modelo 3D con la posibilidad de movimiento en 360¬∞ del usuario
 , esto, para crear el sistema de realidad virtual. Se espera que para un futuro a corto
-plazo la empresa solicite nuevamente a estos ingenieros la implementaciÛn de m·s modelos
+plazo la empresa solicite nuevamente a estos ingenieros la implementaci√≥n de m√°s modelos
 de tipo realidad virtual para las vistas y recorridos de sus casas campestres y apartamentos
 de tipo loft.
-
-Al momento de la realizaciÛn de este sistema de realidad virtual, se presentaron algunos
-inconvenientes en su desarrollo, uno de ellos fue la exportaciÛn e importaciÛn de los
+El primer obst√°culo con el que se encontr√≥ el equipo, fue el de generar la imagen 360 que se usa como skymap, debido a que ninguno ten√≠a experiencia en este √°rea. La manera en la que se abord√≥ esta problem√°tica fue con la b√∫squeda de opciones para hacer la imagen, en la cual se determin√≥ que photoshop y su herramienta de dibujo panor√°mico era la opci√≥n por la que se optar√≠a. Consecuente a esto se buscaron referencias pertinentes a lo que el proyecto requer√≠a, cabe resaltar que la t√©cnica de dibujo fue apoyada con un ‚Äúgrid‚Äù, o cuadr√≠cula panor√°mica, la cual permiti√≥ dibujar los edificios con mayor facilidad y coherencia respecto a los dem√°s.
+Los edificios fueron bocetos y posteriormente se usaron texturas de edificios modificadas con herramientas panor√°micas de photoshop y con esto se tuvo la imagen terminada. 
+Al momento de la realizaci√≥n de este sistema de realidad virtual, se presentaron algunos
+inconvenientes en su desarrollo, uno de ellos fue la exportaci√≥n e importaci√≥n de los
 modelos en 3D, los cuales fueron creados en maya por nuestro equipo de trabajo, este
-inconveniente fue el que m·s tiempo consumiÛ ya que al momento de la importaciÛn de
+inconveniente fue el que m√°s tiempo consumi√≥ ya que al momento de la importaci√≥n de
 nuestros modelos 3D estos se mostraban en un formato de tipo figura de color negro,
-es decir no se estaban importando las texturas a nuestro proyecto, razÛn por la cual
-decidimos crear el entorno del apartamento en a-frame, resultando un poco m·s complejo
+es decir no se estaban importando las texturas a nuestro proyecto, raz√≥n por la cual
+decidimos crear el entorno del apartamento en a-frame, resultando un poco m√°s complejo
 y no amigable visualmente, el resto de los objetos puestos en la escena fueron bajados
-de internet, Pero nuestro equipo de trabajo contÛ con la mala suerte de que todos estaban
-siendo importados sin su textura, hecho por el cual resultÛ difÌcil la realizaciÛn del entorno 3D.
+de internet, Pero nuestro equipo de trabajo cont√≥ con la mala suerte de que todos estaban
+siendo importados sin su textura, hecho por el cual result√≥ dif√≠cil la realizaci√≥n del entorno 3D.
